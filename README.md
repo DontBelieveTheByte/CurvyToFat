@@ -8,4 +8,4 @@ Chrome extension that replaces occurrences of 'curvy' with 'fat' and 'fat' with 
 Installation
 ------------
 
-In Chrome, choose Window > Extensions.  Drag CurvyToFat.crx into the page that appears.
+In Chrome, choose Setting > Extensions.  Drag CurvyToFat.crx into the page that appears.
