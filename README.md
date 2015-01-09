@@ -1,7 +1,7 @@
 Curvy to Fat
 =============
 
-![Alt text](/src/icon-128.png?raw=true "Optional Title")
+![Curvy to fat](/src/icon-128.png?raw=true "Curvy To Fat")
 
 
 Chrome extension that replaces occurrences of 'curvy' with 'fat' and 'fat' with 'honest'.
@@ -12,3 +12,10 @@ Installation
 ------------
 
 In Chrome, choose Setting > Extensions.  Drag CurvyToFat.crx into the page that appears.
+
+Example
+-------
+
+This is what this page would look like
+
+![Screenshot](/screenshot.png?raw=true "Screenshot")
