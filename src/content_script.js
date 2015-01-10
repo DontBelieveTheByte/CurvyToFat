@@ -1,7 +1,7 @@
 walk(document.body);
 handleTitle();
 var title = document.title;
-var observer = new WebKitMutationObserver(function(mutations) {
+var observer = new WebKitMutationObserver(function() {
 	walk(document.body);
 	if (title != document.title){
 		handleTitle();
