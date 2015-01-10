@@ -29,13 +29,13 @@ function walk(node){
 		case 3: // Text node
 			if (undefined == node.curvyToFat) {
 				node.curvyToFat = 'yes';
-				handleBody(node);
+				handleTextNode(node);
 			}
 			break;
 	}
 }
 
-function handleBody(textNode){
+function handleTextNode(textNode){
 	textNode.nodeValue = fixText(textNode.nodeValue);
 }
 function handleTitle(){
