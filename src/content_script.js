@@ -1,7 +1,16 @@
-window.onload = function() {
+walk(document.body);
+handleTitle();
+
+var observer = new WebKitMutationObserver(function(mutations) {
 	walk(document.body);
 	handleTitle();
-};
+});
+observer.observe(
+	document.body,
+	{
+		childList: true
+	}
+);
 
 function walk(node){
 	var child, next;
@@ -18,7 +27,10 @@ function walk(node){
 			}
 			break;
 		case 3: // Text node
-			handleBody(node);
+			if (undefined == node.curvyToFat) {
+				node.curvyToFat = 'yes';
+				handleBody(node);
+			}
 			break;
 	}
 }
