@@ -1,9 +1,11 @@
 walk(document.body);
 handleTitle();
-
+var title = document.title;
 var observer = new WebKitMutationObserver(function(mutations) {
 	walk(document.body);
-	handleTitle();
+	if (title != document.title){
+		handleTitle();
+	}
 });
 observer.observe(
 	document.body,
