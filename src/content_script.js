@@ -1,12 +1,13 @@
-walk(document.body);
-handleTitle();
+var titleAssigned = false;
 var title = document.title;
+
 var observer = new WebKitMutationObserver(function() {
 	walk(document.body);
 	if (title != document.title){
 		handleTitle();
 	}
 });
+
 observer.observe(
 	document.body,
 	{
@@ -40,8 +41,12 @@ function walk(node){
 function handleTextNode(textNode){
 	textNode.nodeValue = fixText(textNode.nodeValue);
 }
+
 function handleTitle(){
-	document.title = fixText(document.title);
+	if (!titleAssigned){
+		titleAssigned = true;
+		document.title = fixText(document.title);
+	}
 }
 
 function fixText(text){
@@ -52,4 +57,5 @@ function fixText(text){
 	return text;
 }
 
-
+walk(document.body);
+handleTitle();
