@@ -6,6 +6,8 @@ Chrome extension that replaces occurrences of 'curvy' with 'fat' and 'fat' with 
 
 [Direct download of crx file](/CurvyToFat.crx?raw=true)
 
+Firefox version is [here](https://github.com/DontBelieveTheByte/CurvyToFat-firefox) or on the [Mozilla Add-Ons website](https://addons.mozilla.org/en-US/firefox/addon/curvytofat/).
+
 ### Installation
 
 In Chrome, choose Setting > Extensions.  Drag CurvyToFat.crx into the page that appears.
